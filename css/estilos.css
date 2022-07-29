@@ -1,0 +1,237 @@
+*{
+    font-family: sans-serif;
+    margin:0; 
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border:none;
+  }
+  html, body,
+  h1, h2, h3, h4, h5, h6,
+  a, p, span,
+  em, small, strong,
+  sub, sup,
+  mark, del, ins, strike,
+  abbr, dfn,
+  blockquote, q, cite,
+  code, pre,
+  ol, ul, li, dl, dt, dd,
+  div, section, article,
+  main, aside, nav,
+  header, hgroup, footer,
+  img, figure, figcaption,
+  address, time,
+  audio, video,
+  canvas, iframe,
+  details, summary,
+  fieldset, form, label, legend,
+  table, caption,
+  tbody, tfoot, thead,
+  tr, th, td {
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+  ul{
+    list-style: none;
+  }
+  body{
+    width: 100%;
+    background-color: rgb(88, 88, 88);
+  }
+  .contenedor{
+    margin: auto;
+    max-width: 450px;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .fondo-princ{
+    background-image: url(../img/fondo-principal.png);
+    background-size: 100% 100%;
+  }
+ 
+  video {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    filter: opacity(20%);
+    z-index: 0;
+  }
+  .video-wrapper {
+    border: 2px solid #000;
+    width: 400px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  audio{
+    position: absolute;
+    z-index: 2;
+    width: 200px;
+    height: 40px;
+    top: 2em;
+    left: 1em;
+  }
+  .fondo-sec{
+    background-image: url(../img/fondo-segundo.png);
+    background-size: 100% 100%;
+  }
+  .fl-c{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 85%;
+    gap: .8em;
+    margin-top: 2em;
+    align-items: center;
+    z-index: 2;
+  }
+  .redes-img{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: .8em;
+  }
+  .redes-img a{
+    width: 10%;
+  }
+  .r-img{
+    width: 100%;
+  }
+  .img-p{
+    width: 70%;
+  }
+  .a-btn{
+    width: 40%;
+  }
+  .btn-img{
+    width: 100%;
+  }
+  h3{
+    color: #fff;
+  }
+
+  .img-logosuelto{
+    width: 100px;
+    top: 1em;
+    right: 1em;
+    position: absolute;
+  }
+  .imgdelivery{
+    width: 70px;
+    bottom: 80px;
+    left: 1.8em;
+    position: absolute;
+  }
+  .nav{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(22, 0, 0);
+    display: flex;
+    flex-wrap: wrap;
+}
+  .nav a{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .icon-nav{
+    width: 70%;
+  }
+  .nosotros img{
+    width: 100%;
+  }
+  .ns-brgrs, .delivery{
+    width: 100%;
+    display: grid;
+    gap: .4em;
+    justify-items: center;
+  }
+  .titulo-brgrs{
+    width: 50%;
+  }
+  .burgrs{
+    width: 90%;
+  }
+  .prd-img{
+    width: 32%;
+  }
+  .btnbbr{
+    width: 35%;
+  }
+  .btnbrgrs{
+    width: 100%;
+  }
+  .titulo-dlv{
+    width: 30%;
+  }
+  .mapa{
+    width: 90%;
+  }
+  .delivery a{
+    width: 35%;
+  }
+  .btn-map{
+    width: 100%;
+  }
+
+  @media only screen and (min-width: 720px) {
+    .contenedor{
+      align-items: center;
+    }
+    .fl-c{
+      margin-top: 0px;
+      justify-content: center;
+    }
+}
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  padding: 30px 0px !important;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #fff !important;
+}

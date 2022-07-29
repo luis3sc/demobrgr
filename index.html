@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+     <!-- Link Swiper's CSS -->
+     <link
+     rel="stylesheet"
+     href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+   />
+</head>
+<body>
+    <div class="contenedor fondo-princ">
+        <audio controls autoplay loop>
+            <source src="fondo-sonido.ogg" type="audio/ogg">
+            <source src="fondo-sonido.mp3" type="audio/mpeg">
+          </audio>
+            <video playsinline autoplay muted loop >
+              <source src="./img/video-fondo.webm" type="video/webm">
+             
+            </video>
+        <img class="imgdelivery" src="./img/delivery-247.png" alt="">
+        <img class="img-logosuelto" src="./img/logo-a.png" alt="">
+        <div class="fl-c">
+            <h3>¡síguenos!</h3>
+            <div class="redes-img">
+               <a href="https://www.facebook.com/micommunitymanagerperu" target="_blank"> <img class="r-img" src="./img/fb-icon.png" alt=""></a>
+               <a href="https://www.instagram.com/micommunitymanager.peru/" target="_blank"> <img class="r-img" src="./img/ig-icon.png" alt=""></a>
+               <a href="" target="_blank"> <img class="r-img" src="./img/youtube-icon.png" alt=""></a>
+            </div>
+            <img class="img-p" src="./img/delicia-burger.png" alt="">
+            <img class="img-p" src="./img/burger.png">
+            <a class="a-btn" target="_blank" href=""><img class="btn-img" src="./img/btn-ordernar.png" alt=""></a>
+        </div>
+        <div class="nav">
+            <a href="tel:+51955109975"><img class="icon-nav" src="./img/cel.png" alt=""></a>
+            <a href="https://m.me/241823876420162" target="_blank"><img class="icon-nav" src="./img/messengr.png" alt=""></a>
+            <a href="https://goo.gl/maps/erBMVjwW99FpCxzz7" target="_blank"><img class="icon-nav" src="./img/ubi.png" alt=""></a>
+            <a href="https://api.whatsapp.com/send/?phone=%2B51955105975&text=Mas+informaci%EF%BF%BDn+de+las+TARJETAS+DIGITALES+INTERACTIVAS" target="_blank"><img class="icon-nav" src="./img/wsp.png" alt=""></a>
+            <a href="https://goo.gl/maps/erBMVjwW99FpCxzz7" target="_blank"><img class="icon-nav" src="./img/sugerencia.png" alt=""></a>
+        </div>
+    </div>
+    <div class="contenedor fondo-sec">
+        <div class="fl-c">
+        <div class="nosotros">
+            <img src="./img/nosotros.png" alt="">
+        </div>
+        <div class="ns-brgrs">
+            <img class="titulo-brgrs" src="./img/burgers.png" alt="">
+
+ <!-- Swiper -->
+ <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><a href=""><img class="prd-img" src="./img/prd-1.png" alt=""></a></div>
+      <div class="swiper-slide"><a href=""><img class="prd-img" src="./img/prd-2.png" alt=""></a></div>
+      <div class="swiper-slide"><a href=""><img class="prd-img" src="./img/prd-3.png" alt=""></a></div>
+      <div class="swiper-slide"><a href=""><img class="prd-img" src="./img/prd-1.png" alt=""></a></div>
+      <div class="swiper-slide"><a href=""><img class="prd-img" src="./img/prd-2.png" alt=""></a></div>
+      <div class="swiper-slide"><a href=""><img class="prd-img" src="./img/prd-3.png" alt=""></a></div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+         
+           <a class="btnbbr" href="https://drive.google.com/file/d/1hzIbVGAQIiuNZTSn6K-YyZIKUFlgzEuo/view?usp=sharing" target="_blank"> <img class="btnbrgrs" src="./img/btn-carta.png" alt=""></a>    
+        </div>
+        <div class="delivery">
+            <img class="titulo-dlv" src="./img/delivery-titulo.png" alt="">
+            <img class="mapa" src="./img/Mapa.png" alt="">
+            <a  href="https://www.google.com/maps/d/u/0/viewer?mid=1hFBZBQ8J6uul9e4KL-r-AezXMq02dIU&ll=-12.085880287130086%2C-76.92542475&z=15" target="_blank"><img class="btn-map" src="./img/btn-mapa.png" alt=""></a>
+        </div>
+    </div>
+    </div>
+
+     <!-- Swiper JS -->
+     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+     <!-- Initialize Swiper -->
+     <script>
+       var swiper = new Swiper(".mySwiper", {
+         slidesPerView: 3,
+         spaceBetween: 5,
+         freeMode: true,
+         loop: true,
+         pagination: {
+           el: ".swiper-pagination",
+           clickable: true,
+         },
+       });
+     </script>
+</body>
+</html>
